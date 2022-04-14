@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/screens/filters_screen.dart';
 import 'package:flutter_complete_guide/screens/meal_details_screen.dart';
+import 'package:flutter_complete_guide/screens/tabs_screen.dart';
 
 import './screens/categories_Screen.dart';
 import './screens/category_meals_screens.dart';
@@ -29,10 +31,11 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               )),
-      home: CategoriesScreen(),
+      home: TabsScreen(),
       routes: {
         '/category-meals': (ctx) => CategoryMealsScreen(),
         '/meal-details': (ctx) => MealDetailsScreen(),
+        '/filter-screen': (ctx) => FilterScreen(),
       },
     );
   }

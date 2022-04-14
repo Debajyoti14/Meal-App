@@ -25,6 +25,7 @@ class CategoryMealsScreen extends StatelessWidget {
               imageURl: categoryMeals[index].imageUrl,
               duration: categoryMeals[index].duration,
               id: categoryMeals[index].id,
+              removeItem: () {},
             );
           },
           itemCount: categoryMeals.length,
